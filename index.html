@@ -300,7 +300,7 @@
                         class="btn btn-success hccBtn" data-dismiss="modal">Close</button>
                 </div>
                 <div class="modal-body hccModalText">
-                    <img id='largeImg' src="./images/' + fullTreeImage + '_2.jpg" class="card-img-top"
+                    <img id='detailImgMdl' src="./images/' + fullTreeImage + '_2.jpg" class="card-img-top"
                         alt="' + fullTreeImage + '">
                 </div>
                 <div class="modal-footer">
@@ -712,7 +712,7 @@
                 console.log(thisTreeId);
 
                 $('#treeViewLabel').text(thisTreeId);
-                $('#largeImg').attr('src', './images/' + thisTreeId + '.jpg');
+                $('#detailImgMdl').attr('src', './images/' + thisTreeId + '_2.jpg');
             })
         }
     </script>
@@ -854,7 +854,7 @@
             console.log(thisTreeId);
 
             $('#treeViewLabel').text(thisTreeId);
-            $('#largeImg').attr('src', './images/' + thisTreeId + '_2.jpg');
+            $('#detailImgMdl').attr('src', './images/' + thisTreeId + '_2.jpg');
         })
 
         $('#searcher').keyup(() => {
