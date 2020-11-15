@@ -432,13 +432,17 @@
         }
 
         var getFileName = (thisSpecies) => {
-            var paransStart = thisSpecies.indexOf('(');
+            var regEx = /[\*\']/g;
+            // var newThisSpecies=thisSpecies.replace('*','').replace('*','').replace('*','');
+
+            var newThisSpecies=thisSpecies.replace(regEx,'');
+            var paransStart = newThisSpecies.indexOf('(');
 
             if (paransStart > -1) {
-                return thisSpecies.substring(0, paransStart).trim();
+                return newThisSpecies.substring(0, paransStart).trim();
             }
             else {
-                return thisSpecies.trim();
+                return newThisSpecies.trim();
             }
         }
 
@@ -880,6 +884,13 @@
 
 
         filter.setData(dataSet);
+
+        var regEx1 = /[\*\']/g;
+            // var newThisSpecies=thisSpecies.replace('*','').replace('*','').replace('*','');
+
+            var new1="Hey**'*".replace(regEx1,'');
+
+            console.log(new1);
 
     </script>
 </body>
