@@ -2,9 +2,18 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HCKK2K54B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6HCKK2K54B');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Climate Communities Tree Picker</title>
+    <title>Right Tree Hawai'i Tree Picker</title>
 
 
     <link rel="stylesheet" href="frombootstrap_hcc.css">
@@ -326,10 +335,10 @@
             </div>
             <div class="col col-sm-4">
                 <center>
-                <!-- <a href="http://www.healthyclimatecommunities.org"><img src="logo-hhc.png" alt="" loading="lazy"></a> -->
-                <a href="http://www.healthyclimatecommunities.org"><img src="HCC_ Stacked_150.png" alt=""
-                        loading="lazy"></a>
-                        </center>
+                    <!-- <a href="http://www.healthyclimatecommunities.org"><img src="logo-hhc.png" alt="" loading="lazy"></a> -->
+                    <a href="http://www.healthyclimatecommunities.org"><img src="HCC_ Stacked_150.png" alt=""
+                            loading="lazy"></a>
+                </center>
             </div>
         </div>
         <div class='row'>&nbsp;</div>
@@ -435,7 +444,7 @@
             var regEx = /[\*\']/g;
             // var newThisSpecies=thisSpecies.replace('*','').replace('*','').replace('*','');
 
-            var newThisSpecies=thisSpecies.replace(regEx,'');
+            var newThisSpecies = thisSpecies.replace(regEx, '');
             var paransStart = newThisSpecies.indexOf('(');
 
             if (paransStart > -1) {
@@ -886,11 +895,11 @@
         filter.setData(dataSet);
 
         var regEx1 = /[\*\']/g;
-            // var newThisSpecies=thisSpecies.replace('*','').replace('*','').replace('*','');
+        // var newThisSpecies=thisSpecies.replace('*','').replace('*','').replace('*','');
 
-            var new1="Hey**'*".replace(regEx1,'');
+        var new1 = "Hey**'*".replace(regEx1, '');
 
-            console.log(new1);
+        console.log(new1);
 
     </script>
 </body>
